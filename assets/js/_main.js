@@ -87,11 +87,12 @@ $(document).ready(function(){
   });
 });
 
+//sharing
 var sharing = function(){
-    $(document).ready(function(){
-      $("body").floatingSocialShare({
-        buttons: ["facebook","twitter","google-plus", "linkedin", "pinterest"],
-        text: "Share with "
-      });
+  $(document).ready(function(){
+    $("body").floatingSocialShare({
+      buttons: ["facebook","twitter","google-plus", "linkedin", "pinterest"],
+      text: "Share with "
     });
-};//sharing
+  });
+};
