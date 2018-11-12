@@ -2,7 +2,6 @@
 layout: post
 title: Git Practice
 description: "Git is the most commonly used version control system today." 
-subdir: git
 tags: [git]
 categories: [git]
 ---
