@@ -32,7 +32,7 @@ If the large nubmer is fed, then the call stacks will be filled up quickly and e
 
 Then, how can we tackly this problem? Use `acc`!
 
-```
+```racket
 (define (sum n)
     (define (sum-helper n acc)
         ; just simply return acc when n becomes 0
