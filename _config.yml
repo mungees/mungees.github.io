@@ -44,9 +44,9 @@ twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
-  - title: "Github"
+  - title: "github"
     url: "https://github.com/mungees"
-  - title: "LinkedIn"
+  - title: "linkedin"
     url: "https://www.linkedin.com/in/taeyanglee/"
 
 # Background image to be tiled on all pages
