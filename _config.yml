@@ -1,4 +1,4 @@
-title:            MUNGEES
+title:            TAEYANG
 description:      
 
 # put your disqus here
@@ -28,11 +28,11 @@ menu:
 
 # Owner/author information
 owner:
-  name:           MUNGEES
-  site:           https://mungees.github.io
+  name:           Taeyang Lee
+  site:           https://www.linkedin.com/in/taeyanglee/
   avatar:         images/avatar.jpg
-  bio:            "LOVE CODING <3"
-  email:          public.mungee@email.com
+  bio:            "I really enjoy taking on tasks which are out of my comfort zone and using them as a great way to learn the necessary tools to complete it."
+  email:          taeyang.lee@mail.utoronto.ca
   # Twitter nick for use in Twitter cards and follow button.
   twitter: # if no twitter in this config, the twitter follow button will be removed
   # GitHub nick for use in follow button in author block.
@@ -44,10 +44,10 @@ twitter:
 
 # Social networking links used in author block underneath posts. Update and remove as you like.
 social:
-  - title: "github"
+  - title: "Github"
     url: "https://github.com/mungees"
-  - title: "linkedin"
-    url: ""
+  - title: "LinkedIn"
+    url: "https://www.linkedin.com/in/taeyanglee/"
 
 # Background image to be tiled on all pages
 background:
