@@ -10,7 +10,7 @@ The following is definition of Binary Search Tree(BST) according to [Wikipedia](
 
 > In computer science, binary search trees (BST), sometimes called ordered or sorted binary trees, are a particular type of container: data structures that store "items" (such as numbers, names etc.) in memory. They allow fast lookup, addition and removal of items, and can be used to implement either dynamic sets of items, or lookup tables that allow finding an item by its key (e.g., finding the phone number of a person by name).
 
-The BST has the following features:
+Key features of BST:
 - Left sub-tree of a node has a key less than to its parent node's key
 - Right sub-tree of a node has a key greater than to its parent node's key
 
@@ -22,58 +22,56 @@ The BST has the following features:
 - Post-order Traversal
 
 ## **Big-O Complexity**
-*Note: N is the number of nodes in the tree prior to the operation*
+*Note: N is the number of nodes in the tree*
 
-The time complexity of the BST is generally O(log N) for a balanced tree. But for unbalanced, O(n) because it is basically similar to a linear data structure. 
+The time complexity of the BST is generally O(logN) for a balanced tree. But for unbalanced, O(N) because it is basically similar to a linear data structure. 
 
-The following site has a great table for comparing complexities. <br/>
+
+This website has a great table for comparing complexities. <br/>
 [Big-O Algorithm Complexity Cheat Sheet](http://bigocheatsheet.com/)
 
 ## **Implementation**
 
-Recently, I am hired as a full stack developer for Ruby on Rails so I have decided to write algorithms in Ruby.
-
 ```ruby
+=begin
+ruby version
+=end
 class BinarySearchTree
-  class Node
-    attr_reader :value, :left, :right
+    class Node
+        attr_reader :value, :left, :right
+
+        def initialize(value)
+            @value = value
+            @left  = nil
+            @right = nil
+        end
+
+        # It skips if the same value is inserted
+        def insert(value)
+            case value <=> @value
+            when 1  # insert to right sub-tree
+                @right.nil? ? @right = Node.new(value) : @right.insert(value)
+            when -1 # insert to left sub-tree
+                @left.nil? ? @left = Node.new(value) : @left.insert(value)
+            end
+        end
+    end
 
     def initialize(value)
-      @value = value
-      @left  = nil
-      @right = nil
+        @root = Node.new(value)
     end
 
-    # It skips if the same value is inserted
-    def insert(value)
-      case value <=> @value
-      when 1  # insert to right sub-tree
-        @right.nil? ? @right = Node.new(value) : @right.insert(value)
-      when -1 # insert to left sub-tree
-        @left.nil? ? @left = Node.new(value) : @left.insert(value)
-      end
+    def print_inorder(node=@root)
+        return if node.nil? # base case
     end
-  end
 
-  def initialize(value)
-		@root = Node.new(value)
-  end
-
-  def print_inorder(node=@root)
-    return if node.nil? # base case
-  end
-
-  def search(value, node=@root)
-    return false if node.nil? # base case
-
-    case node.value <=> value
-    when 0  then true
-    when -1 then search(value, node.right)
-    when 1  then search(value, node.left)
+    def search(value, node=@root)
+        return false if node.nil? # base case
+        case node.value <=> value
+        when 0  then true
+        when -1 then search(value, node.right)
+        when 1  then search(value, node.left)
+        end
     end
-  end
 end
 ```
-
-## Resource
-* [Source code](https://github.com/hodoolee/ruby-algorithms) 
