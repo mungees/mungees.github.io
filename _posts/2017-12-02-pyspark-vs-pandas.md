@@ -2,7 +2,7 @@
 layout: post
 title: Pyspark vs Pandas
 description: "" 
-tags: [big_data]
+tags: [big data]
 categories: [TIL]
 ---
 
