@@ -2,7 +2,7 @@
 layout: post
 title: Priority Queue
 description: "" 
-tags: [Algorithm]
+tags: [algorithm]
 categories: [TIL]
 ---
 

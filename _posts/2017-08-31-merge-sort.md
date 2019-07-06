@@ -2,7 +2,7 @@
 layout: post
 title: Merge Sort
 description: "" 
-tags: [Algorithm]
+tags: [algorithm]
 categories: [TIL]
 ---
 

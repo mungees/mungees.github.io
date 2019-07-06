@@ -2,7 +2,7 @@
 layout: post
 title: Quick Sort
 description: "" 
-tags: [Algorithm]
+tags: [algorithm]
 categories: [TIL]
 ---
 

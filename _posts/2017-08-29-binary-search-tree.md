@@ -2,7 +2,7 @@
 layout: post
 title: Binary Search Tree
 description: "" 
-tags: [Algorithm]
+tags: [algorithm]
 categories: [TIL]
 ---
 

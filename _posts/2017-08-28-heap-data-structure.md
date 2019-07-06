@@ -2,7 +2,7 @@
 layout: post
 title: Introduction to heaps
 description: "" 
-tags: [Algorithm]
+tags: [algorithm]
 categories: [TIL]
 ---
 
