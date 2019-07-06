@@ -2,7 +2,7 @@
 layout: post
 title: Post with a Background Image
 description: "Sample post with a background image CSS override."
-categories: [sample]
+categories: [Sample]
 image:
   background: triangular.png
 ---

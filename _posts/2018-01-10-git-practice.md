@@ -3,7 +3,7 @@ layout: post
 title: Git Practice
 description: "Git is the most commonly used version control system today." 
 tags: [git]
-categories: [git]
+categories: [TIL]
 ---
 
 # Managing History
